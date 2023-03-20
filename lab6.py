@@ -13,6 +13,15 @@ def encode(password):
         new_string += b  # add to the encoded password
     return new_string
 
+def decoder(password):
+    end_result = ''
+    for i in range(len(password)):
+        a = int(password[i])
+
+        b = a - 3
+        b = str(b)
+        end_result += b
+    return end_result
 
 if __name__ == "__main__":
     menu = True
